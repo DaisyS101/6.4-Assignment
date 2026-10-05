@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#edf2e8" />
+    <meta name="description" content="Meet your next favorite cat or dog at Paws & Company." />
+    <title>Paws & Company | Meet your match</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#companions">Skip to companions</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Paws and Company home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></span>
+        <span>paws <span class="brand-amp">&</span> company</span>
+      </a>
+      <div class="header-note"><span class="live-dot"></span><span>GOOD COMPANY, WAITING</span></div>
+    </header>
+
+    <main id="top" class="page-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">A VERY IMPORTANT SEARCH</p>
+          <h1 id="page-title">Find your kind<br />of <span>chaos.</span></h1>
+          <p class="intro-copy">Small paws, big opinions, excellent company.<br class="desktop-break" /> Meet the cats and dogs looking for their person.</p>
+        </div>
+        <button class="surprise-button" id="surprise-button" type="button">
+          <span>Surprise me</span><span class="surprise-arrow" aria-hidden="true">&#8599;</span>
+        </button>
+      </section>
+
+      <section class="discovery" id="companions" aria-labelledby="companions-title">
+        <div class="discovery-heading">
+          <div>
+            <p class="eyebrow">THE LINEUP</p>
+            <h2 id="companions-title">Your future plus-one<span class="period">.</span></h2>
+          </div>
+          <p class="total-note"><strong id="total-count">00</strong><span>good matches<br />and counting</span></p>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Search pets</span>
+            <input id="search-input" type="search" placeholder="Try a name or a vibe" autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+          <div class="toolbar-right">
+            <div class="kind-filters" role="group" aria-label="Filter by animal">
+              <button class="filter-button is-active" type="button" data-kind="all" aria-pressed="true">All <span id="count-all">0</span></button>
+              <button class="filter-button" type="button" data-kind="dog" aria-pressed="false">Dogs <span id="count-dog">0</span></button>
+              <button class="filter-button" type="button" data-kind="cat" aria-pressed="false">Cats <span id="count-cat">0</span></button>
+            </div>
+            <button class="saved-toggle" id="saved-toggle" type="button" aria-pressed="false">
+              <span class="saved-star" aria-hidden="true">&#9733;</span> Saved <span id="saved-count">0</span>
+            </button>
+            <label class="sort-control">
+              <span class="visually-hidden">Sort pets</span>
+              <select id="sort-select">
+                <option value="featured">Featured</option>
+                <option value="name">Name: A to Z</option>
+                <option value="youngest">Youngest first</option>
+                <option value="oldest">Oldest first</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="results-line">
+          <p id="results-label">Meet the whole crew</p>
+          <p><span id="result-count">0</span> companions</p>
+        </div>
+        <div class="pet-grid" id="pet-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-mark" aria-hidden="true">?</span>
+          <h3>No matches this time.</h3>
+          <p>Try another search or switch up your filters.</p>
+          <button class="reset-button" id="reset-button" type="button">Show everyone</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>PAWS & COMPANY</span>
+      <span>Made for excellent first impressions.</span>
+    </footer>
+  </body>
+</html>
