@@ -40,8 +40,8 @@ const petDetails = [
     bio: "Makes friends in every room and thinks your shoes are a fun game."
   },
   {
-    id: "juniper",
-    name: "Juniper",
+    id: "Saturn",
+    name: "Saturn",
     kind: "cat",
     birthDate: "2020-11-26",
     image: "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=1000&q=85",

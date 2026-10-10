@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --ink: #202d27;
+  --ink: #1c2c24;
   --muted: #68736b;
   --line: #d9e0d6;
   --canvas: #edf2e8;
@@ -52,7 +52,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(32, 45, 39, 0.12);
+  border-bottom: 1px solid rgba(49, 33, 33, 0.12);
 }
 
 .brand {
@@ -105,7 +105,7 @@ h1 span { color: var(--leaf); font-style: italic; }
   border: 0;
   border-radius: 4px;
   background: var(--leaf);
-  color: white;
+  color: rgb(255, 193, 193);
   cursor: pointer;
   font-size: 13px;
   font-weight: 600;
